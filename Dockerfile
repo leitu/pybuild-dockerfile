@@ -2,7 +2,7 @@ FROM node:9.4.0-alpine
 
 LABEL maintainer="alex.lei.tu@gmail.com"
 
-CP app /usr/local/
+COPY app /usr/local/
 
 WORKDIR /usr/local/app
 
