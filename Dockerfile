@@ -18,9 +18,6 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/reposit
     apk update &&\
     apk add --no-cache make gcc g++ python pulseaudio-dev
 
-ENV http_proxy=''
-ENV https_proxy=''
-
 RUN npm update || echo true &&\
     rm -rf node_modules &&\ 
     npm install &&\
